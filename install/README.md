@@ -1,4 +1,4 @@
-Para descar gar un fichero pytho
+Para descargar un fichero python
 curl -O url
 
 para executar un script pyytho
