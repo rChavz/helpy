@@ -1,0 +1,5 @@
+ps = subprocess.Popen(['ps', '-ef', '--columns', '1000'], stdout=subprocess.PIPE)
+output = ps.communicate()[0]
+for line in output.splitlines():
+    if 'rtptransmit' in line:
+        print(line)
