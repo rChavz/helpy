@@ -20,5 +20,5 @@ if(file_exists("/etc/yum.repos.d/nginx.repo")):
   #{
   file_create("/etc/yum.repos.d/nginx.repo", nginxrepo)
   #}
-else
+else:
   print("no existe")
