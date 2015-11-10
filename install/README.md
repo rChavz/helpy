@@ -6,3 +6,5 @@ python file.py [argmunets]
 
 <b>Nginx</b></br>
 curl -O https://raw.githubusercontent.com/rChavz/helpy/master/install/nginx.py
+cmod 700 nginx.py
+python nginx.py
