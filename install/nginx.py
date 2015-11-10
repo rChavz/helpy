@@ -1,4 +1,5 @@
 
+filerepo = "/etc/yum.repos.d/nginx.repo"
 nginxrepo = """[nginx]
 name=nginx repo
 baseurl=http://nginx.org/packages/centos/$releasever/$basearch/
@@ -13,12 +14,14 @@ def file_exists(filepath):
   
 def file_create (filepath, connten):
   #{
-  print(filepath, connten)
+  target = open (filepath, 'a')
+  target.write(connten)
+  target.close()
   #}
   
-if(file_exists("/etc/yum.repos.d/nginx.repo")):
+if(file_exists(filerepo)):
   #{
-  file_create("/etc/yum.repos.d/nginx.repo", nginxrepo)
+  file_create(filerepo, nginxrepo)
   #}
-else:
-  print("no existe")
+
+print("no existe")
