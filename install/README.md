@@ -5,6 +5,7 @@ para executar un script pyytho
 python file.py [argmunets]
 
 <b>Nginx</b></br>
-curl -O https://raw.githubusercontent.com/rChavz/helpy/master/install/nginx.py
-cmod 700 nginx.py
-python nginx.py
+curl -O https://raw.githubusercontent.com/rChavz/helpy/master/install/nginx.py</br>
+cmod 700 nginx.py</br>
+python nginx.py</br>
+
